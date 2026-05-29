@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@theme {
+	--color-primary: #3B82F6;
+	--color-primary-dark: #2563EB;
+	--color-secondary: #EC4899;
+	--color-blue: #3B82F6;
+	--color-red: #EF4444;
+	--color-background: #0F0F1A;
+	--color-surface: #1A1A2E;
+	--color-text: #FFFFFF;
+	--color-text-secondary: #A0A0B0;
+	--color-border: #2A2A4A;
+	--color-success: #10B981;
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+}
+
 :root {
 	--primary: #3B82F6;
 	--primary-dark: #2563EB;
@@ -12,24 +28,8 @@
 	--text-secondary: #A0A0B0;
 	--border: #2A2A4A;
 	--success: #10B981;
-	--gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--blue) 100%);
-	--gradient-full: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 25%, var(--blue) 50%, var(--red) 75%, var(--primary) 100%);
-}
-
-@theme inline {
-	--color-primary: var(--primary);
-	--color-primary-dark: var(--primary-dark);
-	--color-secondary: var(--secondary);
-	--color-blue: var(--blue);
-	--color-red: var(--red);
-	--color-background: var(--background);
-	--color-surface: var(--surface);
-	--color-text: var(--text);
-	--color-text-secondary: var(--text-secondary);
-	--color-border: var(--border);
-	--color-success: var(--success);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--gradient: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #3B82F6 100%);
+	--gradient-full: linear-gradient(135deg, #3B82F6 0%, #EC4899 25%, #3B82F6 50%, #EF4444 75%, #3B82F6 100%);
 }
 
 * {
