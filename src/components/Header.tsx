@@ -17,15 +17,15 @@ export default function Header({ variant = "home" }: HeaderProps) {
 	};
 
 	return (
-		<header className="fixed top-0 left-0 right-0 bg-[rgba(15,15,26,0.95)] backdrop-blur-[10px] z-[1000] border-b border-[var(--border)]">
+		<header className="fixed top-0 left-0 right-0 bg-surface/95 backdrop-blur-[10px] z-[1000] border-b border-border">
 			<nav className="flex justify-between items-center py-4 px-8 max-w-[1200px] mx-auto">
-				<Link href="/" className="flex items-center gap-2 no-underline text-[var(--text)]">
+				<Link href="/" className="flex items-center gap-2 no-underline text-text">
 					<Image
 						src="/logo.png"
 						alt="Luna Logo"
 						width={24}
 						height={24}
-						className="object-contain rounded-full border-2 border-[var(--blue)]"
+						className="object-contain rounded-full border-2 border-blue"
 					/>
 					<span className="text-xl font-bold gradient-text">Luna</span>
 				</Link>
@@ -35,35 +35,35 @@ export default function Header({ variant = "home" }: HeaderProps) {
 						<>
 							<Link
 								href="/#features"
-								className="text-[var(--text-secondary)] font-medium transition-colors duration-300 hover:text-[var(--text)]"
+								className="text-text-secondary font-medium transition-colors duration-300 hover:text-text"
 							>
 								Features
 							</Link>
 							<Link
 								href="/#privacy"
-								className="text-[var(--text-secondary)] font-medium transition-colors duration-300 hover:text-[var(--text)]"
+								className="text-text-secondary font-medium transition-colors duration-300 hover:text-text"
 							>
 								Privacy
 							</Link>
 							<Link
 								href="/about"
-								className={`font-medium transition-colors duration-300 hover:text-[var(--text)] ${
-									isActive("/about") ? "text-[var(--text)]" : "text-[var(--text-secondary)]"
+								className={`font-medium transition-colors duration-300 hover:text-text ${
+									isActive("/about") ? "text-text" : "text-text-secondary"
 								}`}
 							>
 								About
 							</Link>
 							<Link
 								href="/support"
-								className={`font-medium transition-colors duration-300 hover:text-[var(--text)] ${
-									isActive("/support") ? "text-[var(--text)]" : "text-[var(--text-secondary)]"
+								className={`font-medium transition-colors duration-300 hover:text-text ${
+									isActive("/support") ? "text-text" : "text-text-secondary"
 								}`}
 							>
 								Support
 							</Link>
 							<Link
 								href="/#download"
-								className="text-[var(--text-secondary)] font-medium transition-colors duration-300 hover:text-[var(--text)]"
+								className="text-text-secondary font-medium transition-colors duration-300 hover:text-text"
 							>
 								Download
 							</Link>
@@ -72,24 +72,24 @@ export default function Header({ variant = "home" }: HeaderProps) {
 						<>
 							<Link
 								href="/"
-								className={`font-medium transition-colors duration-300 hover:text-[var(--text)] ${
-									isActive("/") ? "text-[var(--text)]" : "text-[var(--text-secondary)]"
+								className={`font-medium transition-colors duration-300 hover:text-text ${
+									isActive("/") ? "text-text" : "text-text-secondary"
 								}`}
 							>
 								Home
 							</Link>
 							<Link
 								href="/about"
-								className={`font-medium transition-colors duration-300 hover:text-[var(--text)] ${
-									isActive("/about") ? "text-[var(--text)]" : "text-[var(--text-secondary)]"
+								className={`font-medium transition-colors duration-300 hover:text-text ${
+									isActive("/about") ? "text-text" : "text-text-secondary"
 								}`}
 							>
 								About
 							</Link>
 							<Link
 								href="/support"
-								className={`font-medium transition-colors duration-300 hover:text-[var(--text)] ${
-									isActive("/support") ? "text-[var(--text)]" : "text-[var(--text-secondary)]"
+								className={`font-medium transition-colors duration-300 hover:text-text ${
+									isActive("/support") ? "text-text" : "text-text-secondary"
 								}`}
 							>
 								Support
