@@ -11,23 +11,23 @@ export default function PrivacyPolicyPage() {
 	return (
 		<>
 			<Header variant="minimal" />
-			<main className="pt-32 pb-16 px-4 min-h-screen">
+			<main className="pt-24 sm:pt-32 pb-16 px-4 min-h-screen">
 				<div className="container max-w-[800px]">
-					<div className="text-center mb-12">
-						<h1 className="text-4xl font-bold mb-2 gradient-text">Privacy Policy</h1>
+					<div className="text-center mb-8 sm:mb-12">
+						<h1 className="text-3xl sm:text-4xl font-bold mb-2 gradient-text">Privacy Policy</h1>
 						<p className="text-text-secondary">Last updated: May 2026</p>
 					</div>
 
-					<div className="space-y-10">
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">1. Our Privacy Commitment</h2>
+					<div className="space-y-8 sm:space-y-10">
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">1. Our Privacy Commitment</h2>
 							<p className="text-text-secondary leading-relaxed">
 								Luna is built on a fundamental principle: your health data belongs to you, and only you. We don&apos;t collect, store, or share your personal health information on any servers. All data remains on your device, always.
 							</p>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">2. Data Storage</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">2. Data Storage</h2>
 							<p className="text-text-secondary leading-relaxed mb-4">
 								All data you enter into Luna is stored locally on your device using a SQLite database. This database is located within your app&apos;s private sandbox and is not accessible to other apps or services.
 							</p>
@@ -39,8 +39,8 @@ export default function PrivacyPolicyPage() {
 							</ul>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">3. Data We Do NOT Collect</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">3. Data We Do NOT Collect</h2>
 							<p className="text-text-secondary leading-relaxed mb-4">Luna does NOT collect:</p>
 							<ul className="list-none space-y-2 text-text-secondary">
 								<li>Personal identification information (name, email, phone number)</li>
@@ -51,22 +51,22 @@ export default function PrivacyPolicyPage() {
 							</ul>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">4. Data Sharing</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">4. Data Sharing</h2>
 							<p className="text-text-secondary leading-relaxed">
 								We do not share, sell, rent, or trade your data with third parties. Since your data never leaves your device, there is no possibility of unauthorized data sharing.
 							</p>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">5. On-Device Machine Learning</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">5. On-Device Machine Learning</h2>
 							<p className="text-text-secondary leading-relaxed">
 								Luna&apos;s cycle predictions are generated using on-device machine learning. The prediction algorithm runs locally on your phone using your historical cycle data. No prediction data is sent to external servers.
 							</p>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">6. Contact Us</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">6. Contact Us</h2>
 							<p className="text-text-secondary leading-relaxed">
 								If you have questions about this privacy policy or Luna&apos;s data practices, please contact us at: <strong>privacy@luna-app.com</strong>
 							</p>

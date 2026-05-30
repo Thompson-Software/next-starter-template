@@ -11,23 +11,23 @@ export default function TermsPage() {
 	return (
 		<>
 			<Header variant="minimal" />
-			<main className="pt-32 pb-16 px-4 min-h-screen">
+			<main className="pt-24 sm:pt-32 pb-16 px-4 min-h-screen">
 				<div className="container max-w-[800px]">
-					<div className="text-center mb-12">
-						<h1 className="text-4xl font-bold mb-2 gradient-text">Terms of Service</h1>
+					<div className="text-center mb-8 sm:mb-12">
+						<h1 className="text-3xl sm:text-4xl font-bold mb-2 gradient-text">Terms of Service</h1>
 						<p className="text-text-secondary">Last updated: May 2026</p>
 					</div>
 
-					<div className="space-y-10">
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">1. Acceptance of Terms</h2>
+					<div className="space-y-8 sm:space-y-10">
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">1. Acceptance of Terms</h2>
 							<p className="text-text-secondary leading-relaxed">
 								By downloading, accessing, or using Luna (&quot;the App&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the App.
 							</p>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">2. Health Disclaimer</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">2. Health Disclaimer</h2>
 							<p className="text-text-secondary leading-relaxed mb-4">
 								<strong>IMPORTANT:</strong> Luna is NOT a medical device and is NOT intended to diagnose, treat, cure, or prevent any disease or condition. The App is for informational and educational purposes only.
 							</p>
@@ -39,8 +39,8 @@ export default function TermsPage() {
 							</ul>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">3. Data and Privacy</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">3. Data and Privacy</h2>
 							<p className="text-text-secondary leading-relaxed mb-4">
 								Your use of Luna is also governed by our Privacy Policy. By using the App, you consent to our data practices as described in the Privacy Policy, including:
 							</p>
@@ -52,8 +52,8 @@ export default function TermsPage() {
 							</ul>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">4. Contact Information</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">4. Contact Information</h2>
 							<p className="text-text-secondary leading-relaxed">
 								If you have questions about these Terms of Service, please contact us at: <strong>legal@luna-app.com</strong>
 							</p>

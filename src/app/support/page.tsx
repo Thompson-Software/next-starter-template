@@ -62,20 +62,20 @@ export default function SupportPage() {
 			<Header variant="minimal" />
 			<main>
 				{/* Hero Section */}
-				<section className="min-h-[40vh] flex items-center justify-center pt-32 pb-16 px-8 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15)_0%,rgba(236,72,153,0.1)_25%,rgba(59,130,246,0.1)_50%,rgba(239,68,68,0.05)_75%,transparent_100%)]">
+				<section className="min-h-[40vh] flex items-center justify-center pt-24 sm:pt-32 pb-16 px-4 sm:px-8 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15)_0%,rgba(236,72,153,0.1)_25%,rgba(59,130,246,0.1)_50%,rgba(239,68,68,0.05)_75%,transparent_100%)]">
 					<div className="text-center max-w-[800px]">
-						<h1 className="text-5xl font-extrabold mb-6 gradient-text leading-tight">How can we help?</h1>
-						<p className="text-xl text-text-secondary leading-relaxed">
+						<h1 className="text-4xl sm:text-5xl font-extrabold mb-4 sm:mb-6 gradient-text leading-tight">How can we help?</h1>
+						<p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
 							Find answers to common questions or get in touch with our support team.
 						</p>
 					</div>
 				</section>
 
 				{/* FAQ Section */}
-				<section className="py-24 bg-surface">
+				<section className="py-16 sm:py-24 bg-surface">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-12 gradient-text">Frequently Asked Questions</h2>
-						<div className="max-w-[800px] mx-auto space-y-4">
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 gradient-text">Frequently Asked Questions</h2>
+						<div className="max-w-[800px] mx-auto space-y-4 px-4 sm:px-0">
 							{faqs.map((faq, index) => (
 								<div
 									key={index}
@@ -101,11 +101,11 @@ export default function SupportPage() {
 				</section>
 
 				{/* Contact Section */}
-				<section className="py-24 bg-background">
+				<section className="py-16 sm:py-24 bg-background">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-4 gradient-text">Contact Support</h2>
-						<p className="text-text-secondary text-center text-lg mb-12">Can&apos;t find what you&apos;re looking for? Send us a message.</p>
-						<form onSubmit={handleSubmit} className="max-w-[600px] mx-auto space-y-6">
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 gradient-text">Contact Support</h2>
+						<p className="text-text-secondary text-center text-base sm:text-lg mb-8 sm:mb-12">Can&apos;t find what you&apos;re looking for? Send us a message.</p>
+						<form onSubmit={handleSubmit} className="max-w-[600px] mx-auto space-y-6 px-4 sm:px-0">
 							<div>
 								<label htmlFor="name" className="block mb-2 text-text font-medium">Name</label>
 								<input
@@ -154,7 +154,7 @@ export default function SupportPage() {
 							</div>
 							<button
 								type="submit"
-								className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-all duration-300 bg-[var(--color-blue)] text-white shadow-[0_4px_15px_rgba(59,130,246,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]"
+								className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 bg-[var(--color-blue)] text-white shadow-[0_4px_15px_rgba(59,130,246,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)] w-full sm:w-auto"
 							>
 								Send Message
 							</button>

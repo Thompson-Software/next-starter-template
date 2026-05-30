@@ -96,29 +96,29 @@ export default function Home() {
 			<Header variant="home" />
 			<main>
 				{/* Hero Section */}
-				<section className="min-h-screen flex items-center justify-center pt-32 pb-16 px-8 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15)_0%,rgba(236,72,153,0.1)_25%,rgba(59,130,246,0.1)_50%,rgba(239,68,68,0.05)_75%,transparent_100%)]">
+				<section className="min-h-screen flex items-center justify-center pt-24 sm:pt-32 pb-16 px-4 sm:px-8 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15)_0%,rgba(236,72,153,0.1)_25%,rgba(59,130,246,0.1)_50%,rgba(239,68,68,0.05)_75%,transparent_100%)]">
 					<div className="text-center max-w-[800px]">
-						<h1 className="text-6xl font-extrabold mb-6 gradient-text leading-tight">
+						<h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 sm:mb-6 gradient-text leading-tight">
 							Your Cycle, Your Privacy
 						</h1>
-						<p className="text-xl text-text-secondary mb-10 leading-relaxed">
+						<p className="text-lg sm:text-xl text-text-secondary mb-8 sm:mb-10 leading-relaxed">
 							Track your period, ovulation, and fertility windows with complete privacy. Available on iOS and Android. No accounts. No cloud. No data sharing.
 						</p>
-						<div className="mb-12">
-							<a href="#download" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-all duration-300 bg-[var(--color-blue)] text-white shadow-[0_4px_15px_rgba(59,130,246,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]">
+						<div className="mb-8 sm:mb-12">
+							<a href="#download" className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 bg-[var(--color-blue)] text-white shadow-[0_4px_15px_rgba(59,130,246,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]">
 								Download on App Store
 							</a>
 						</div>
-						<div className="flex justify-center gap-6 flex-wrap">
-							<div className="flex items-center gap-2 px-5 py-3 bg-surface border border-border rounded-full text-sm text-text-secondary">
+						<div className="flex justify-center gap-3 sm:gap-6 flex-wrap">
+							<div className="flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-surface border border-border rounded-full text-sm text-text-secondary">
 								<span className="text-blue"><LockIcon /></span>
 								<span>100% Local Storage</span>
 							</div>
-							<div className="flex items-center gap-2 px-5 py-3 bg-surface border border-border rounded-full text-sm text-text-secondary">
+							<div className="flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-surface border border-border rounded-full text-sm text-text-secondary">
 								<span className="text-blue"><ChipIcon /></span>
 								<span>On-Device ML</span>
 							</div>
-							<div className="flex items-center gap-2 px-5 py-3 bg-surface border border-border rounded-full text-sm text-text-secondary">
+							<div className="flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-surface border border-border rounded-full text-sm text-text-secondary">
 								<span className="text-secondary"><PhoneIcon /></span>
 								<span>No Account Required</span>
 							</div>
@@ -127,38 +127,38 @@ export default function Home() {
 				</section>
 
 				{/* Features Section */}
-				<section id="features" className="py-24 bg-surface">
+				<section id="features" className="py-16 sm:py-24 bg-surface">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-12 gradient-text">Features</h2>
-						<div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
-							<div className="group bg-background p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-blue)] hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)]">
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 gradient-text">Features</h2>
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+							<div className="group bg-background p-6 sm:p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-blue)] hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)]">
 								<div className="w-10 h-10 mb-4 text-blue"><ChartIcon /></div>
-								<h3 className="text-xl font-semibold mb-3 text-text">Cycle Tracking</h3>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Cycle Tracking</h3>
 								<p className="text-text-secondary leading-relaxed">Log period start/end dates, flow levels, and symptoms with an intuitive interface.</p>
 							</div>
-							<div className="group bg-background p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
+							<div className="group bg-background p-6 sm:p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
 								<div className="w-10 h-10 mb-4 text-secondary"><GlobeIcon /></div>
-								<h3 className="text-xl font-semibold mb-3 text-text">Smart Predictions</h3>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Smart Predictions</h3>
 								<p className="text-text-secondary leading-relaxed">On-device machine learning predicts your cycle, ovulation, and fertility windows.</p>
 							</div>
-							<div className="group bg-background p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-blue)] hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)]">
+							<div className="group bg-background p-6 sm:p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-blue)] hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)]">
 								<div className="w-10 h-10 mb-4 text-blue"><CalendarIcon /></div>
-								<h3 className="text-xl font-semibold mb-3 text-text">Calendar View</h3>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Calendar View</h3>
 								<p className="text-text-secondary leading-relaxed">Visual calendar showing your period, fertile window, and predicted ovulation day.</p>
 							</div>
-							<div className="group bg-background p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--red)] hover:shadow-[0_10px_30px_rgba(239,68,68,0.2)]">
+							<div className="group bg-background p-6 sm:p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--red)] hover:shadow-[0_10px_30px_rgba(239,68,68,0.2)]">
 								<div className="w-10 h-10 mb-4 text-[var(--red)]"><ThermometerIcon /></div>
-								<h3 className="text-xl font-semibold mb-3 text-text">BBT & Mucus Tracking</h3>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">BBT & Mucus Tracking</h3>
 								<p className="text-text-secondary leading-relaxed">Track basal body temperature and cervical mucus to improve prediction accuracy.</p>
 							</div>
-							<div className="group bg-background p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-blue)] hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)]">
+							<div className="group bg-background p-6 sm:p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-blue)] hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)]">
 								<div className="w-10 h-10 mb-4 text-blue"><InfoIcon /></div>
-								<h3 className="text-xl font-semibold mb-3 text-text">Insights</h3>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Insights</h3>
 								<p className="text-text-secondary leading-relaxed">View cycle regularity, mood trends, and symptom patterns over time.</p>
 							</div>
-							<div className="group bg-background p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
+							<div className="group bg-background p-6 sm:p-8 rounded-2xl border border-border transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
 								<div className="w-10 h-10 mb-4 text-secondary"><SaveIcon /></div>
-								<h3 className="text-xl font-semibold mb-3 text-text">Backup & Export</h3>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Backup & Export</h3>
 								<p className="text-text-secondary leading-relaxed">Export your data anytime. Your data belongs to you.</p>
 							</div>
 						</div>
@@ -166,10 +166,10 @@ export default function Home() {
 				</section>
 
 				{/* Privacy Section */}
-				<section id="privacy" className="py-24 bg-background">
+				<section id="privacy" className="py-16 sm:py-24 bg-background">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-12 gradient-text">Privacy First</h2>
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 gradient-text">Privacy First</h2>
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
 							<div>
 								<p className="text-lg text-text-secondary mb-8 leading-relaxed">
 									Luna is built on a simple principle: your health data is yours and yours alone. We don&apos;t believe in tracking, profiling, or monetizing your personal information.
@@ -197,23 +197,23 @@ export default function Home() {
 									</li>
 								</ul>
 							</div>
-							<div className="flex flex-col items-center gap-6">
-								<div className="bg-surface p-8 rounded-2xl border-2 border-[var(--color-blue)] text-center w-[200px] shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-									<div className="w-12 h-12 mx-auto mb-2 text-blue"><PhoneLargeIcon /></div>
-									<div className="font-bold mb-1">Your Device</div>
-									<div className="text-text-secondary text-sm">All data stored locally</div>
+							<div className="flex flex-col items-center gap-4 sm:gap-6">
+								<div className="bg-surface p-6 sm:p-8 rounded-2xl border-2 border-[var(--color-blue)] text-center w-[180px] sm:w-[200px] shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+									<div className="w-10 sm:w-12 h-10 sm:h-12 mx-auto mb-2 text-blue"><PhoneLargeIcon /></div>
+									<div className="font-bold mb-1 text-sm sm:text-base">Your Device</div>
+									<div className="text-text-secondary text-xs sm:text-sm">All data stored locally</div>
 								</div>
-								<div className="flex items-center gap-3 px-6 py-4 bg-surface rounded-full border border-[var(--color-blue)]">
+								<div className="flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-surface rounded-full border border-[var(--color-blue)]">
 									<span className="text-blue"><BlockIcon /></span>
-									<span className="font-semibold text-text-secondary">No Cloud</span>
+									<span className="font-semibold text-text-secondary text-sm sm:text-base">No Cloud</span>
 								</div>
-								<div className="flex items-center gap-3 px-6 py-4 bg-surface rounded-full border border-[var(--color-blue)]">
+								<div className="flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-surface rounded-full border border-[var(--color-blue)]">
 									<span className="text-blue"><BlockIcon /></span>
-									<span className="font-semibold text-text-secondary">No Tracking</span>
+									<span className="font-semibold text-text-secondary text-sm sm:text-base">No Tracking</span>
 								</div>
-								<div className="flex items-center gap-3 px-6 py-4 bg-surface rounded-full border border-[var(--color-secondary)]">
+								<div className="flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-surface rounded-full border border-[var(--color-secondary)]">
 									<span className="text-secondary"><BlockIcon /></span>
-									<span className="font-semibold text-text-secondary">No Accounts</span>
+									<span className="font-semibold text-text-secondary text-sm sm:text-base">No Accounts</span>
 								</div>
 							</div>
 						</div>
@@ -221,10 +221,10 @@ export default function Home() {
 				</section>
 
 				{/* Download Section */}
-				<section id="download" className="py-24 bg-surface text-center">
+				<section id="download" className="py-16 sm:py-24 bg-surface text-center">
 					<div className="container">
-						<h2 className="text-4xl font-bold mb-4 gradient-text">Download Luna</h2>
-						<p className="text-text-secondary text-xl mb-8">Available on iOS and Android</p>
+						<h2 className="text-3xl sm:text-4xl font-bold mb-4 gradient-text">Download Luna</h2>
+						<p className="text-text-secondary text-lg sm:text-xl mb-8">Available on iOS and Android</p>
 						<div className="flex gap-4 justify-center flex-wrap mb-6">
 							<a href="#" className="inline-block transition-all duration-300 hover:translate-y-[-2px] hover:drop-shadow-[0_4px_12px_rgba(59,130,246,0.3)]">
 								<img

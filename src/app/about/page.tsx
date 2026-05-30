@@ -40,16 +40,16 @@ export default function AboutPage() {
 			<Header variant="minimal" />
 			<main>
 				{/* Hero Section */}
-				<section className="min-h-[60vh] flex items-center justify-center pt-32 pb-16 px-8 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15)_0%,rgba(236,72,153,0.1)_25%,rgba(59,130,246,0.1)_50%,rgba(239,68,68,0.05)_75%,transparent_100%)]">
+				<section className="min-h-[60vh] flex items-center justify-center pt-24 sm:pt-32 pb-16 px-4 sm:px-8 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15)_0%,rgba(236,72,153,0.1)_25%,rgba(59,130,246,0.1)_50%,rgba(239,68,68,0.05)_75%,transparent_100%)]">
 					<div className="text-center max-w-[800px]">
-						<h1 className="text-5xl md:text-6xl font-extrabold mb-6 gradient-text leading-tight">
+						<h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 sm:mb-6 gradient-text leading-tight">
 							Period Tracking, Reimagined
 						</h1>
-						<p className="text-xl text-text-secondary mb-10 leading-relaxed">
+						<p className="text-lg sm:text-xl text-text-secondary mb-8 sm:mb-10 leading-relaxed">
 							Luna combines powerful cycle tracking with uncompromising privacy. No accounts, no cloud, no data sharing. Just you and your cycle data, completely private.
 						</p>
-						<div className="mb-12">
-							<a href="/#download" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-all duration-300 bg-[var(--color-blue)] text-white shadow-[0_4px_15px_rgba(59,130,246,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]">
+						<div className="mb-8 sm:mb-12">
+							<a href="/#download" className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 bg-[var(--color-blue)] text-white shadow-[0_4px_15px_rgba(59,130,246,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]">
 								Download Luna
 							</a>
 						</div>
@@ -57,27 +57,27 @@ export default function AboutPage() {
 				</section>
 
 				{/* Mission Section */}
-				<section className="py-24 bg-surface">
+				<section className="py-16 sm:py-24 bg-surface">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-12 gradient-text">Our Mission</h2>
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 gradient-text">Our Mission</h2>
 						<div className="max-w-[800px] mx-auto text-center">
-							<p className="text-lg text-text-secondary mb-6 leading-relaxed">
+							<p className="text-base sm:text-lg text-text-secondary mb-4 sm:mb-6 leading-relaxed">
 								We believe that menstrual health data is deeply personal and deserves the highest level of protection. In an era where data is constantly collected, sold, and exploited, Luna takes a different approach.
 							</p>
-							<p className="text-lg text-text-secondary mb-10 leading-relaxed">
+							<p className="text-base sm:text-lg text-text-secondary mb-8 sm:mb-10 leading-relaxed">
 								Our mission is to provide a powerful, intuitive period tracking experience while ensuring that your health information never leaves your device. We don&apos;t believe in trading your privacy for convenience. With Luna, you get both.
 							</p>
-							<div className="flex justify-center gap-12 flex-wrap">
+							<div className="flex justify-center gap-8 sm:gap-12 flex-wrap">
 								<div className="text-center">
-									<div className="text-4xl font-extrabold gradient-text mb-2">0</div>
+									<div className="text-3xl sm:text-4xl font-extrabold gradient-text mb-2">0</div>
 									<div className="text-text-secondary text-sm">Data points in cloud</div>
 								</div>
 								<div className="text-center">
-									<div className="text-4xl font-extrabold gradient-text mb-2">100%</div>
+									<div className="text-3xl sm:text-4xl font-extrabold gradient-text mb-2">100%</div>
 									<div className="text-text-secondary text-sm">Local storage</div>
 								</div>
 								<div className="text-center">
-									<div className="text-4xl font-extrabold gradient-text mb-2">∞</div>
+									<div className="text-3xl sm:text-4xl font-extrabold gradient-text mb-2">∞</div>
 									<div className="text-text-secondary text-sm">Privacy commitment</div>
 								</div>
 							</div>
@@ -86,72 +86,74 @@ export default function AboutPage() {
 				</section>
 
 				{/* Target Audience Section */}
-				<section className="py-24 bg-background">
+				<section className="py-16 sm:py-24 bg-background">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-12 gradient-text">Who Is Luna For?</h2>
-						<div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8">
-							<div className="bg-surface p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 gradient-text">Who Is Luna For?</h2>
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+							<div className="bg-surface p-6 sm:p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
 								<ChipIcon />
-								<h3 className="text-xl font-semibold mb-3 text-text">Privacy-Conscious Users</h3>
-								<p className="text-text-secondary leading-relaxed">If you&apos;re concerned about data privacy and want to keep your health information secure, Luna is designed for you. Your data never leaves your device.</p>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Privacy-Conscious Users</h3>
+								<p className="text-text-secondary leading-relaxed text-sm sm:text-base">If you&apos;re concerned about data privacy and want to keep your health information secure, Luna is designed for you. Your data never leaves your device.</p>
 							</div>
-							<div className="bg-surface p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
+							<div className="bg-surface p-6 sm:p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
 								<ClockIcon />
-								<h3 className="text-xl font-semibold mb-3 text-text">Busy Professionals</h3>
-								<p className="text-text-secondary leading-relaxed">Quick logging, smart predictions, and no account setup means you can start tracking immediately without wasting time on sign-ups.</p>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Busy Professionals</h3>
+								<p className="text-text-secondary leading-relaxed text-sm sm:text-base">Quick logging, smart predictions, and no account setup means you can start tracking immediately without wasting time on sign-ups.</p>
 							</div>
-							<div className="bg-surface p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
+							<div className="bg-surface p-6 sm:p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
 								<HeartIcon />
-								<h3 className="text-xl font-semibold mb-3 text-text">Health Enthusiasts</h3>
-								<p className="text-text-secondary leading-relaxed">Track BBT, cervical mucus, and symptoms to gain deeper insights into your cycle patterns and overall health.</p>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Health Enthusiasts</h3>
+								<p className="text-text-secondary leading-relaxed text-sm sm:text-base">Track BBT, cervical mucus, and symptoms to gain deeper insights into your cycle patterns and overall health.</p>
 							</div>
-							<div className="bg-surface p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
+							<div className="bg-surface p-6 sm:p-8 rounded-2xl border border-border text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[var(--color-secondary)] hover:shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
 								<UsersIcon />
-								<h3 className="text-xl font-semibold mb-3 text-text">Anyone Who Values Privacy</h3>
-								<p className="text-text-secondary leading-relaxed">Whether you&apos;re tracking for fertility, health, or just awareness, Luna ensures your personal data stays personal.</p>
+								<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">Anyone Who Values Privacy</h3>
+								<p className="text-text-secondary leading-relaxed text-sm sm:text-base">Whether you&apos;re tracking for fertility, health, or just awareness, Luna ensures your personal data stays personal.</p>
 							</div>
 						</div>
 					</div>
 				</section>
 
 				{/* Comparison Section */}
-				<section className="py-24 bg-surface">
+				<section className="py-16 sm:py-24 bg-surface">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-4 gradient-text">How Luna Compares</h2>
-						<p className="text-text-secondary text-center text-lg mb-12">See how Luna stacks up against other period tracking apps</p>
-						<div className="max-w-[800px] mx-auto border border-border rounded-xl overflow-hidden">
-							<div className="grid grid-cols-3 bg-background border-b border-border">
-								<div className="p-4 text-center text-text font-semibold">Feature</div>
-								<div className="p-4 text-center text-secondary font-semibold">Luna</div>
-								<div className="p-4 text-center text-text font-semibold">Other Apps</div>
-							</div>
-							{[
-								["Cloud Storage", "❌ None", "✅ Usually"],
-								["Account Required", "❌ No", "✅ Usually"],
-								["Data Selling", "❌ Never", "⚠️ Sometimes"],
-								["Analytics Tracking", "❌ None", "✅ Common"],
-								["Local Storage", "✅ 100%", "⚠️ Partial"],
-								["Data Export", "✅ Yes", "⚠️ Sometimes"],
-								["Cycle Predictions", "✅ ML-powered", "✅ Yes"],
-								["BBT Tracking", "✅ Yes", "⚠️ Premium"],
-								["Mucus Tracking", "✅ Yes", "⚠️ Premium"],
-								["Monthly Fee", "❌ Free", "⚠️ Often"],
-							].map((row, idx) => (
-								<div key={idx} className="grid grid-cols-3 border-b border-border last:border-b-0">
-									<div className="p-4 text-center text-text-secondary font-medium">{row[0]}</div>
-									<div className="p-4 text-center text-success font-semibold">{row[1]}</div>
-									<div className="p-4 text-center text-text-secondary font-medium">{row[2]}</div>
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 gradient-text">How Luna Compares</h2>
+						<p className="text-text-secondary text-center text-base sm:text-lg mb-8 sm:mb-12">See how Luna stacks up against other period tracking apps</p>
+						<div className="max-w-[800px] mx-auto border border-border rounded-xl overflow-x-auto">
+							<div className="min-w-[500px]">
+								<div className="grid grid-cols-3 bg-background border-b border-border">
+									<div className="p-3 sm:p-4 text-center text-text font-semibold text-sm sm:text-base">Feature</div>
+									<div className="p-3 sm:p-4 text-center text-secondary font-semibold text-sm sm:text-base">Luna</div>
+									<div className="p-3 sm:p-4 text-center text-text font-semibold text-sm sm:text-base">Other Apps</div>
 								</div>
-							))}
+								{[
+									["Cloud Storage", "❌ None", "✅ Usually"],
+									["Account Required", "❌ No", "✅ Usually"],
+									["Data Selling", "❌ Never", "⚠️ Sometimes"],
+									["Analytics Tracking", "❌ None", "✅ Common"],
+									["Local Storage", "✅ 100%", "⚠️ Partial"],
+									["Data Export", "✅ Yes", "⚠️ Sometimes"],
+									["Cycle Predictions", "✅ ML-powered", "✅ Yes"],
+									["BBT Tracking", "✅ Yes", "⚠️ Premium"],
+									["Mucus Tracking", "✅ Yes", "⚠️ Premium"],
+									["Monthly Fee", "❌ Free", "⚠️ Often"],
+								].map((row, idx) => (
+									<div key={idx} className="grid grid-cols-3 border-b border-border last:border-b-0">
+										<div className="p-3 sm:p-4 text-center text-text-secondary font-medium text-sm sm:text-base">{row[0]}</div>
+										<div className="p-3 sm:p-4 text-center text-success font-semibold text-sm sm:text-base">{row[1]}</div>
+										<div className="p-3 sm:p-4 text-center text-text-secondary font-medium text-sm sm:text-base">{row[2]}</div>
+									</div>
+								))}
 							</div>
 						</div>
+					</div>
 				</section>
 
 				{/* Benefits Section */}
-				<section className="py-24 bg-background">
+				<section className="py-16 sm:py-24 bg-background">
 					<div className="container">
-						<h2 className="text-4xl font-bold text-center mb-12 gradient-text">Why Choose Luna?</h2>
-						<div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
+						<h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 gradient-text">Why Choose Luna?</h2>
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 							{[
 								{ num: "01", title: "True Privacy", desc: "Your health data is stored exclusively on your device. No cloud backups, no data sharing, no profiling. Your cycle information is yours alone." },
 								{ num: "02", title: "No Account Required", desc: "Download and start tracking immediately. No email verification, no password creation, no personal information required. Just you and your data." },
@@ -160,11 +162,11 @@ export default function AboutPage() {
 								{ num: "05", title: "No Hidden Costs", desc: "All features are available to everyone. No premium tiers, no paywalls, no subscriptions. Privacy shouldn&apos;t be a luxury feature." },
 								{ num: "06", title: "Works Offline", desc: "No internet connection required. Track your cycle anywhere, anytime, without worrying about connectivity or data usage." },
 							].map((benefit, idx) => (
-								<div key={idx} className="bg-surface p-8 rounded-2xl border border-border relative overflow-hidden">
+								<div key={idx} className="bg-surface p-6 sm:p-8 rounded-2xl border border-border relative overflow-hidden">
 									<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[var(--primary)] via-[var(--color-secondary)] to-[var(--color-blue)]"></div>
-									<div className="text-5xl font-extrabold gradient-text mb-4 opacity-30">{benefit.num}</div>
-									<h3 className="text-xl font-semibold mb-3 text-text">{benefit.title}</h3>
-									<p className="text-text-secondary leading-relaxed">{benefit.desc}</p>
+									<div className="text-4xl sm:text-5xl font-extrabold gradient-text mb-4 opacity-30">{benefit.num}</div>
+									<h3 className="text-lg sm:text-xl font-semibold mb-3 text-text">{benefit.title}</h3>
+									<p className="text-text-secondary leading-relaxed text-sm sm:text-base">{benefit.desc}</p>
 								</div>
 							))}
 						</div>
@@ -172,10 +174,10 @@ export default function AboutPage() {
 				</section>
 
 				{/* Download Section */}
-				<section className="py-24 bg-surface text-center">
+				<section className="py-16 sm:py-24 bg-surface text-center">
 					<div className="container">
-						<h2 className="text-4xl font-bold mb-4 gradient-text">Ready to Take Control?</h2>
-						<p className="text-text-secondary text-xl mb-8">Download Luna today and experience period tracking with true privacy</p>
+						<h2 className="text-3xl sm:text-4xl font-bold mb-4 gradient-text">Ready to Take Control?</h2>
+						<p className="text-text-secondary text-lg sm:text-xl mb-8">Download Luna today and experience period tracking with true privacy</p>
 						<div className="flex gap-4 justify-center flex-wrap mb-6">
 							<a href="#" className="inline-block transition-all duration-300 hover:translate-y-[-2px] hover:drop-shadow-[0_4px_12px_rgba(59,130,246,0.3)]">
 								<img

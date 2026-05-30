@@ -17,16 +17,16 @@ export default function DataCollectionPage() {
 	return (
 		<>
 			<Header variant="minimal" />
-			<main className="pt-32 pb-16 px-4 min-h-screen">
+			<main className="pt-24 sm:pt-32 pb-16 px-4 min-h-screen">
 				<div className="container max-w-[800px]">
-					<div className="text-center mb-12">
-						<h1 className="text-4xl font-bold mb-2 gradient-text">Data Collection Policy</h1>
+					<div className="text-center mb-8 sm:mb-12">
+						<h1 className="text-3xl sm:text-4xl font-bold mb-2 gradient-text">Data Collection Policy</h1>
 						<p className="text-text-secondary">Last updated: May 2026</p>
 					</div>
 
-					<div className="space-y-10">
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">Current Data Collection Status</h2>
+					<div className="space-y-8 sm:space-y-10">
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">Current Data Collection Status</h2>
 							<p className="text-text-secondary leading-relaxed mb-6">
 								<strong>Luna currently does NOT collect any data.</strong> The app operates entirely offline with respect to data processing and analytics.
 							</p>
@@ -41,8 +41,8 @@ export default function DataCollectionPage() {
 							</div>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">What This Means for You</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">What This Means for You</h2>
 							<p className="text-text-secondary leading-relaxed mb-4">Because Luna collects no data:</p>
 							<ul className="list-none space-y-2 text-text-secondary">
 								<li>Your cycle data never leaves your device</li>
@@ -54,8 +54,8 @@ export default function DataCollectionPage() {
 							</ul>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">Future Analytics (Opt-In Only)</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">Future Analytics (Opt-In Only)</h2>
 							<p className="text-text-secondary leading-relaxed mb-4">
 								We may consider adding optional, anonymous analytics in the future to help improve the app. If we do:
 							</p>
@@ -68,8 +68,8 @@ export default function DataCollectionPage() {
 							</ul>
 						</section>
 
-						<section className="pb-10 border-b border-border">
-							<h2 className="text-2xl font-semibold mb-4 text-text">Contact Us</h2>
+						<section className="pb-8 sm:pb-10 border-b border-border">
+							<h2 className="text-xl sm:text-2xl font-semibold mb-4 text-text">Contact Us</h2>
 							<p className="text-text-secondary leading-relaxed">
 								If you have questions about our data collection practices or privacy commitment, please contact us at: <strong>privacy@luna-app.com</strong>
 							</p>
